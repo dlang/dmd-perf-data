@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DMD Performance</title>
+<link rel="stylesheet" href="uPlot.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="top">
+    <div class="helper">
+        <a class="logo" href="https://dlang.org/"><img alt="D Logo" src="dlogo.svg"></a>
+        <a class="title" href="./">DMD Performance</a>
+        <nav>
+            <a href="info.html">Info</a>
+            <a href="https://dlang.org/download.html" target="_blank" rel="noopener noreferrer">Install dmd</a>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <h1>DMD Performance history</h1>
+    <p id="latest"></p>
+    <p id="range">
+        Show
+        <button data-days="7" id="week">past week</button>
+        <button data-days="30" id="month" class="default">past month</button>
+        <button data-days="91" id="3months">past 3 months</button>
+        <button data-days="365" id="year">past year</button>
+        <button data-days="" id="all">all</button>
+        or from <input type="date" id="from"> to <input type="date" id="to">
+        <button id="reset">Reset</button>
+    </p>
+    <div id="charts"></div>
+    <div class="smallprint" id="copyright">Copyright &copy; 1999-2026 by the
+        <a href="https://dlang.org/foundation_overview.html">D Language Foundation</a></div>
+</div>
+<script src="uPlot.iife.min.js"></script>
+<script src="common.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
