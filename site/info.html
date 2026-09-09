@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Info · DMD Performance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="top">
+    <div class="helper">
+        <a class="logo" href="https://dlang.org/"><img alt="D Logo" src="dlogo.svg"></a>
+        <a class="title" href="./">DMD Performance</a>
+        <nav>
+            <a href="info.html">Info</a>
+            <a href="https://dlang.org/download.html">Install dmd</a>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <h1>About</h1>
+
+    <p>This site tracks the performance of the D compiler. Every merge into
+    <code>master</code> of <a href="https://github.com/dlang/dmd">dlang/dmd</a>
+    gets one point, CI builds that commit with ldc compiler with PGO and LTO, and measures it.</p>
+
+    <p>Most numbers are instruction counts from cachegrind: compiling hello.d,
+    Phobos and a vibe.d app. They barely move between runs, so a change of
+    0.1% is real. The sizes of dmd and of a hello world are stripped binary
+    sizes. Peak memory and the time dmd takes to build itself are noisier
+    because they depend on the runner machine. The compile phases come from
+    <code>-ftime-trace</code> and it's wall clock time.
+    <a href="https://github.com/dlang/dmd/blob/master/.github/PERF.md">PERF.md</a>
+    has the command behind each metric.</p>
+
+    <p>The data is one JSON file per merge in
+    <a href="https://github.com/dlang/dmd-perf-data">dlang/dmd-perf-data</a>,
+    written by the perf workflow in dlang/dmd.</p>
+
+    <div class="smallprint" id="copyright">Copyright &copy; 1999-2026 by the
+        <a href="https://dlang.org/foundation_overview.html">D Language Foundation</a></div>
+</div>
+</body>
+</html>

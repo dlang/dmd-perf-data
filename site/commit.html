@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commit · DMD Performance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="top">
+    <div class="helper">
+        <a class="logo" href="https://dlang.org/"><img alt="D Logo" src="dlogo.svg"></a>
+        <a class="title" href="./">DMD Performance</a>
+        <nav>
+            <a href="info.html">Info</a>
+            <a href="https://dlang.org/download.html">Install dmd</a>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <h1>Commit <code id="sha"></code></h1>
+    <p id="meta"></p>
+    <p id="links"></p>
+    <p id="nav"></p>
+
+    <h2>Metrics</h2>
+    <p>Compared with the previous record.</p>
+    <table id="metrics">
+        <thead><tr><th>Metric</th><th>Previous</th><th>This commit</th><th>Δ</th></tr></thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Compile phases</h2>
+    <p>Self time per phase from <code>-ftime-trace</code>.</p>
+    <table id="phases">
+        <thead><tr><th>Phase</th><th>compile hello.d</th><th>Δ</th><th>compile Phobos</th><th>Δ</th></tr></thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="smallprint" id="copyright">Copyright &copy; 1999-2026 by the
+        <a href="https://dlang.org/foundation_overview.html">D Language Foundation</a></div>
+</div>
+<script src="common.js"></script>
+<script src="commit.js"></script>
+</body>
+</html>
