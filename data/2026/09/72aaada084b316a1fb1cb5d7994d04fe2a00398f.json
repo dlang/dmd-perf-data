@@ -1,0 +1,58 @@
+{
+    "commit": "72aaada084b316a1fb1cb5d7994d04fe2a00398f",
+    "committed_at": "2026-09-16T05:50:50Z",
+    "metrics": {
+        "compile_hello_debug_instr": 213409512,
+        "compile_hello_release_instr": 231711423,
+        "compile_phobos_codegen_instr": 1471882573,
+        "compile_phobos_instr": 5122216518,
+        "compile_vibed_instr": 15109407832,
+        "dmd_binary_size": 7210208,
+        "dmd_self_build_wall": 9177,
+        "hello_binary_size": 750744,
+        "hello_max_rss": 44268,
+        "phobos_max_rss": 635032,
+        "vibed_max_rss": 1962888
+    },
+    "push": {
+        "before": "b9c2fc637c4774c47d8441ce357dea390cedcc79",
+        "commits": 1
+    },
+    "runner": {
+        "host_dmd": "ldc-1.42.0",
+        "os": "ubuntu-24.04"
+    },
+    "schema_version": 3,
+    "time_trace": {
+        "hello": {
+            "phases": {
+                "codegen": 1485,
+                "ctfe": 0,
+                "dfa": 0,
+                "inline": 0,
+                "other": 0,
+                "parse": 24767,
+                "sema1": 7584,
+                "sema2": 0,
+                "sema3": 4313,
+                "sema_other": 11942
+            },
+            "total_us": 50091
+        },
+        "phobos": {
+            "phases": {
+                "codegen": 307577,
+                "ctfe": 9302,
+                "dfa": 0,
+                "inline": 2795,
+                "other": 0,
+                "parse": 79988,
+                "sema1": 146542,
+                "sema2": 227,
+                "sema3": 372631,
+                "sema_other": 166157
+            },
+            "total_us": 1085219
+        }
+    }
+}
