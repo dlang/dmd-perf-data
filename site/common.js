@@ -10,6 +10,9 @@ const metrics = [
     ["hello_max_rss",                "peak RSS (compile hello.d)",          1024,    "MB", 2],
     ["phobos_max_rss",               "peak RSS (compile Phobos)",           1024,    "MB", 2],
     ["vibed_max_rss",                "peak RSS (compile vibe.d)",           1024,    "MB", 2],
+    ["hello_page_faults",            "page faults (compile hello.d)",       1000,    "K",  2],
+    ["phobos_page_faults",           "page faults (compile Phobos)",        1000,    "K",  2],
+    ["vibed_page_faults",            "page faults (compile vibe.d)",        1000,    "K",  2],
     ["dmd_self_build_wall",          "compile dmd itself (wall)",           1000,    "s",  2],
 ];
 
