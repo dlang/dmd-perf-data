@@ -1,0 +1,79 @@
+{
+    "commit": "2d7f1e9bfac41ecad473ac359e6a2eec77a8e945",
+    "committed_at": "2026-10-23T10:10:34Z",
+    "metrics": {
+        "compile_ctregex_instr": 29262905359,
+        "compile_hello_debug_instr": 203592995,
+        "compile_hello_release_instr": 221182643,
+        "compile_phobos_codegen_instr": 1420985028,
+        "compile_phobos_instr": 4708016048,
+        "compile_vibed_instr": 13563360242,
+        "ctregex_max_rss": 2091116,
+        "ctregex_page_faults": 495713,
+        "dmd_binary_size": 8572688,
+        "dmd_self_build_wall": 7541,
+        "hello_binary_size": 754840,
+        "hello_max_rss": 45228,
+        "hello_page_faults": 8728,
+        "phobos_max_rss": 626028,
+        "phobos_page_faults": 152003,
+        "vibed_max_rss": 1925284,
+        "vibed_page_faults": 469843
+    },
+    "push": {
+        "before": "8f113b419a205a72c48a70bc46bc327479bf0ef8",
+        "commits": 1
+    },
+    "runner": {
+        "host_dmd": "ldc-1.42.0",
+        "os": "ubuntu-24.04"
+    },
+    "schema_version": 3,
+    "time_trace": {
+        "ctregex": {
+            "phases": {
+                "codegen": 137529,
+                "ctfe": 2004563,
+                "dfa": 0,
+                "inline": 3015,
+                "other": 0,
+                "parse": 29960,
+                "sema1": 79362,
+                "sema2": 9474,
+                "sema3": 255065,
+                "sema_other": 24054
+            },
+            "total_us": 2543022
+        },
+        "hello": {
+            "phases": {
+                "codegen": 1509,
+                "ctfe": 0,
+                "dfa": 0,
+                "inline": 0,
+                "other": 0,
+                "parse": 17891,
+                "sema1": 7032,
+                "sema2": 0,
+                "sema3": 3505,
+                "sema_other": 10686
+            },
+            "total_us": 40623
+        },
+        "phobos": {
+            "phases": {
+                "codegen": 263872,
+                "ctfe": 5821,
+                "dfa": 0,
+                "inline": 3448,
+                "other": 0,
+                "parse": 58266,
+                "sema1": 121698,
+                "sema2": 1143,
+                "sema3": 282151,
+                "sema_other": 150300
+            },
+            "total_us": 886699
+        }
+    }
+}
