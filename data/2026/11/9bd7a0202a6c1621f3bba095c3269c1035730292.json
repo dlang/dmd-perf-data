@@ -2,23 +2,23 @@
     "commit": "9bd7a0202a6c1621f3bba095c3269c1035730292",
     "committed_at": "2026-11-24T08:07:02Z",
     "metrics": {
-        "compile_ctregex_instr": 29511117189,
-        "compile_hello_debug_instr": 204593585,
-        "compile_hello_release_instr": 222202881,
-        "compile_phobos_codegen_instr": 1423086086,
-        "compile_phobos_instr": 4726557772,
-        "compile_vibed_instr": 13611782762,
-        "ctregex_max_rss": 2081636,
-        "ctregex_page_faults": 518490,
+        "compile_ctregex_instr": 29511131414,
+        "compile_hello_debug_instr": 204594238,
+        "compile_hello_release_instr": 222205597,
+        "compile_phobos_codegen_instr": 1423101426,
+        "compile_phobos_instr": 4726608007,
+        "compile_vibed_instr": 13611917215,
+        "ctregex_max_rss": 2081908,
+        "ctregex_page_faults": 518494,
         "dmd_binary_size": 8597296,
-        "dmd_self_build_wall": 9459,
+        "dmd_self_build_wall": 11674,
         "hello_binary_size": 753456,
-        "hello_max_rss": 43724,
-        "hello_page_faults": 8841,
-        "phobos_max_rss": 620044,
-        "phobos_page_faults": 153066,
-        "vibed_max_rss": 1909144,
-        "vibed_page_faults": 476023
+        "hello_max_rss": 43760,
+        "hello_page_faults": 8839,
+        "phobos_max_rss": 620076,
+        "phobos_page_faults": 153071,
+        "vibed_max_rss": 1909304,
+        "vibed_page_faults": 476049
     },
     "push": {
         "before": "250f5c009657b983495715b0eed8e0d8d97935fc",
@@ -32,48 +32,48 @@
     "time_trace": {
         "ctregex": {
             "phases": {
-                "codegen": 163766,
-                "ctfe": 2357697,
+                "codegen": 196454,
+                "ctfe": 3247993,
                 "dfa": 0,
-                "inline": 3335,
+                "inline": 2861,
                 "other": 0,
-                "parse": 36760,
-                "sema1": 89185,
-                "sema2": 10049,
-                "sema3": 292099,
-                "sema_other": 26553
+                "parse": 49582,
+                "sema1": 110114,
+                "sema2": 8878,
+                "sema3": 384557,
+                "sema_other": 31447
             },
-            "total_us": 2979444
+            "total_us": 4031886
         },
         "hello": {
             "phases": {
-                "codegen": 1521,
+                "codegen": 1741,
                 "ctfe": 0,
                 "dfa": 0,
                 "inline": 0,
                 "other": 0,
-                "parse": 21258,
-                "sema1": 7178,
+                "parse": 25987,
+                "sema1": 7662,
                 "sema2": 0,
-                "sema3": 3992,
-                "sema_other": 11230
+                "sema3": 4612,
+                "sema_other": 12309
             },
-            "total_us": 45179
+            "total_us": 52311
         },
         "phobos": {
             "phases": {
-                "codegen": 294615,
-                "ctfe": 7370,
+                "codegen": 350545,
+                "ctfe": 10864,
                 "dfa": 0,
-                "inline": 3453,
+                "inline": 3239,
                 "other": 0,
-                "parse": 69688,
-                "sema1": 132378,
-                "sema2": 1237,
-                "sema3": 328136,
-                "sema_other": 158310
+                "parse": 90558,
+                "sema1": 163360,
+                "sema2": 244,
+                "sema3": 428720,
+                "sema_other": 174893
             },
-            "total_us": 995187
+            "total_us": 1222423
         }
     }
 }
